@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Wishlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <h1>Family Wishlist Login</h1>
+        <input type="text" id="username" placeholder="Enter your username">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="login()">Login</button>
+        <h2>Create a New User</h2>
+        <input type="text" id="newUserUsername" placeholder="Enter new username">
+        <input type="password" id="newUserPassword" placeholder="Enter new password">
+        <button onclick="createUser()">Create User</button>
+    </div>
+
+    <div class="container" id="wishlistContainer" style="display: none;">
+        <h1>Family Wishlist</h1>
+
+        <!-- Add Member Section 
+        <div class="add-member">
+            <input type="text" id="newMemberName" placeholder="Enter new member name">
+            <input type="password" id="newMemberPassword" placeholder="Enter password for member">
+            <button onclick="addMemberFromInput()">Add Member</button>
+        </div>-->
+
+        <!-- Wishlist Section -->
+        <div id="wishlists">
+            <!-- Wishlist for each member will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
